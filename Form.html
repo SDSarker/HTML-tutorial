@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration form</h2>
+    <form action="/action.php">
+
+        <label for="id1">
+
+        <input type="text" placeholder="Enter name here">
+        <input type="password" placeholder="Enter Password">
+        
+        </label>
+        <br>
+        <br>
+        <!--Radio button-->
+        
+        <label for="1">
+            <input type="radio" value="Student" name="User Type:" id="1">Student
+        </label>
+        <br>
+        <label for="2">
+            <input type="radio" value="Teacher" name="User Type:" id="2">Faculty
+        </label>
+        <!--ID ar label diye rakhle text e click korleo buttin-->
+        <div id="id1" class="group1">
+
+        </div>
+        <div id="id2" class="group2">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4>Choose your subjects</h4>
+        <!--Checkbox-->
+        <label for="math">
+            <input type="checkbox" value="math" name="Subject" id="101">Math
+        </label>
+        <br>
+        <label for="phy">
+            <input type="checkbox" value="phy" name="Subject" id="102">Physics
+        </label>
+        <br>
+        <label for="chem">
+            <input type="checkbox" value="chem" name="Subject" id="103">Chemistry
+        </label>
+        <br>
+        <label for="bgs">
+            <input type="checkbox" value="bgs" name="Subject" id="104">Global Studies
+        </label>
+        <br>
+        <br>
+        <br>
+
+        <!--text area-->
+        <textarea name="Feedback" id="101" placeholder="Write your feedback here..." rows="10">Feedback:</textarea>
+        <br>
+        <br>
+        <br>
+        <h4>Select city:</h4>
+        <select name="City" id="city">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Dinajpur">Dinajpur</option>
+            <option value="Chittagong">Chittagong</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
